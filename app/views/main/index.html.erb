@@ -15,17 +15,27 @@
 
 <div class="background">
   <div class="container pt-9 pb-8">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
+     <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <h1 id="main-text" class="display-4 mb-4 text-center">Bem-vindo ao CoderDojoLX Meet!</h1>
+        <p class="lead">Esta é a plataforma usada pelo clube de programação CoderDojo LX para gerir as suas sessões virtuais. Você pode criar suas próprias salas para hospedar sessões, ou se juntar a outras utilizando um link curto e conveniente.</p>
         <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
           <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
         <% end %>
       </div>
-
     </div>
+
+    <div class="row justify-content-center mt-6">
+      <div class="col-12 col-lg-8">
+     	  <h2  class="text-center">Mais informação</h2>
+        <p class="lead">
+          Consulte o nosso sitio web <a href="https://coderdojo-lx.pt" target="_blank">aqui</a>
+        </p>
+        <p class="lead">
+          <strong>Para entrares nas nossas sessões, não precisas de ter conta, mas precisas de ter assinado o «Consentimento para participação em sessão remotas CoderDojo LX»</strong>
+        </p>
+	    </div>
+    </div>
+
   </div>
 </div>
-
-<%= render "main/components/features" %>
